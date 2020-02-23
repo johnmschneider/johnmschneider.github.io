@@ -1,4 +1,5 @@
-import { Utils } from "https://johnmschneider.github.io/projects/rpg%20game%201/utils.js";
+import { Utils } from 
+    "https://johnmschneider.github.io/projects/rpg%20game%201/utils.js";
 
 var Generator = {};
 Generator.SETTLEMENT_NAME = 0;

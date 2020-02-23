@@ -1,9 +1,8 @@
 class PointOfInterest {
-    constructor(description, parent, chunkLocation, metadata) {
+    constructor(description, parent, chunkLocation) {
         this.description = description;
         this.parent = parent;
         this.chunkLocation = chunkLocation;
-        this.metadata = metadata;
     }
     
     getDescription() {
@@ -16,10 +15,6 @@ class PointOfInterest {
     
     getChunkLocation() {
         return this.chunkLocation;
-    }
-    
-    getMetadata() {
-        return this.metadata;
     }
 }
 

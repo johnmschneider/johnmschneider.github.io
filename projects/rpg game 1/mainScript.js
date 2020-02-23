@@ -1,7 +1,11 @@
-import { Generator } from "https://johnmschneider.github.io/projects/rpg%20game%201/generator.js";
-import { Player } from "https://johnmschneider.github.io/projects/rpg%20game%201/player.js";
-import { Utils } from "https://johnmschneider.github.io/projects/rpg%20game%201/utils.js";
-import commandLineInputListener from "https://johnmschneider.github.io/projects/rpg%20game%201/commandLineInput.js";
+import { Generator } from 
+    "https://johnmschneider.github.io/projects/rpg%20game%201/generator.js";
+import { Player } from 
+    "https://johnmschneider.github.io/projects/rpg%20game%201/player.js";
+import { Utils } from 
+    "https://johnmschneider.github.io/projects/rpg%20game%201/utils.js";
+import commandLineInputListener from 
+    "https://johnmschneider.github.io/projects/rpg%20game%201/commandLineInput.js";
 
 export default function main() {
     window.player = null;
