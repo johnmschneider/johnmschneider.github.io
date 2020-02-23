@@ -70,6 +70,7 @@ Generator.genDesert = function(isStartLocation) {
 Generator.genLocation = function(isStartLocation) {
     let location = Math.random();
     
+    Utils.newParagraph("Generator.genLocation: location == " + location);
     if (location < 1/2) {
         Generator.genMountainPass(isStartLocation);
     } 
