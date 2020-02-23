@@ -43,6 +43,8 @@ class TravelTime {
         else if (minutes != 0) {
             output += "and " + minutes + " minutes";
         }
+        
+        return output;
     }
 }
 
