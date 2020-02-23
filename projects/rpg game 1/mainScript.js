@@ -30,6 +30,8 @@ export default function main() {
         }
     }
     
+    /* I think this works now, but left for future debugging just in case.
+     *
     Utils.newParagraph("mainScript.main: time to travel 5kms at 5km/h == " + 
         Utils.travelTime([0, 0], [5, 0]).toPrettyString());
     
@@ -41,4 +43,5 @@ export default function main() {
     
     Utils.newParagraph("mainScript.main: time to travel 125.1234kms at 5km/h == " + 
         Utils.travelTime([0, 0], [125.1234, 0]).toPrettyString());
+    */
 }
