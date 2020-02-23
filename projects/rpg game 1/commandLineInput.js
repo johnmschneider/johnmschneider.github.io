@@ -1,4 +1,4 @@
-import { Utils } from "/utils.js";
+import { Utils } from "https://johnmschneider.github.io/projects/rpg%20game%201/utils.js";
 
 function doCommand(inputText){
     
