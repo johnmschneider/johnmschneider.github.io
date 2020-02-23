@@ -11,7 +11,7 @@ Generator.genSettlement = function() {
         "la", "ri", "on", "ale", "gan", "dor", "er", "an", "ex", "'", "tal", "lis",
         "kesh", "esh", "en", "ygg", "dra", "sil", "val", "hal", "so", "vn", "gard"];
 
-    let nameSyllableCount = Math.floor((Math.random() + 1) * 5);
+    let nameSyllableCount = Math.floor((Math.random() + 1) * 4);
     let maxSyllablesPerWord = 3;
     let name = Utils.capitalizefirstLetter(Utils.randomPick(nameFrags));
 
