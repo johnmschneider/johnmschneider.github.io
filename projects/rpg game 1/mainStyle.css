@@ -1,4 +1,4 @@
-div {
+div{
     
 }
 
@@ -24,24 +24,24 @@ div {
     font-size: 150%;
 }
 
-.toolbar {
-    padding-left: 1vw;
-    padding-right: 1vw;
-}
-
-a {
-    color: gainsboro;
-    padding: 1vw;
-    
-    border-style: solid;
-    border-width: 1px;
-}
-
-h1 {
+input {
     
 }
 
-.titleText {
-    text-align: center;
+.commandLine {
+    position: absolute;
+    height: 3vh;
+    width: 80vw;
+    
+    background-color: black;
+    
+    border: 1px solid slategrey;
+    margin-top: 85vh;
+    margin-left: 5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    
     color: white;
 }

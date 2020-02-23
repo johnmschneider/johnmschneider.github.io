@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPG game 1</title>
+        <link rel="stylesheet" href="mainStyle.css">
+    </head>
+    <body>
+        <div id="mainDiv" class = "main">
+            <div class="toolbar">
+                <h1 class="titleText"> johnmschneider.github.io </h1>
+                <a href="projects/rpg game 1/rpgIndex.html"> rpg game 1 </a>
+            </div>
+            
+            <div id="contentDiv" class="content">
+            </div>
+        </div>
+    </body>
+</html>
