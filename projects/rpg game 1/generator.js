@@ -8,7 +8,7 @@ Generator.SETTLEMENT_CHUNK_LOCATION = 3;
 
 Generator.genSettlement = function() {
     let nameFrags = [
-        "la", "ri", "on", "ale", "gan", "dor", "er", "an", "ex", "'",
+        "la", "ri", "on", "ale", "gan", "dor", "er", "an", "ex", "'", "tal", "lis",
         "kesh", "esh", "en", "ygg", "dra", "sil", "val", "hal", "so", "vn", "gard"];
 
     let nameSyllableCount = Math.floor((Math.random() + 1) * 5);
@@ -16,10 +16,13 @@ Generator.genSettlement = function() {
     let name = Utils.capitalizefirstLetter(Utils.randomPick(nameFrags));
 
     //  Generate name
+    //
+    // (-1 to account for one syllable already created)
     for (let i = 0; i < nameSyllableCount - 1; i++) {
         var outputSyllable = Utils.randomPick(nameFrags);
-
-        if (i == maxSyllablesPerWord) {
+        
+        // (-1 to account for one syllable already created)
+        if (i == maxSyllablesPerWord - 1) {
             outputSyllable = " " + Utils.capitalizefirstLetter(outputSyllable);
         }
 
