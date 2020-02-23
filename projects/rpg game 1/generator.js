@@ -45,17 +45,22 @@ Generator.genSettlement = function() {
 Generator.genMountainPass = function(isStartLocation) {
     if (isStartLocation) {
         let newSettlement = Generator.genSettlement();
-
+        let travelTimeToSettlement = Utils.travelTime(window.player.getChunkLocation(), 
+            newSettlement.getChunkLocation());
+        
         Utils.newParagraph("You are travelling through a mountain pass on your way " +
             "to the " + newSettlement.getSizeModifier() + " " +
             newSettlement.getSize() + " of " + 
-            newSettlement.getName() + ".");
+            newSettlement.getName() + ". You are about " + 
+                travelTimeToSettlement.toPrettyString() + " away.");
     }
 }
 
 Generator.genDesert = function(isStartLocation) {
     if (isStartLocation) {
         let newSettlement = Generator.genSettlement();
+        let travelTimeToSettlement = Utils.travelTime(window.player.getChunkLocation(), 
+            newSettlement.getChunkLocation());
         
         let sizes = ["small", "large", "vast"];
         let size = Utils.randomPick(sizes);
@@ -63,7 +68,8 @@ Generator.genDesert = function(isStartLocation) {
         Utils.newParagraph("You are travelling through a " + size + " desert on your " +
             "way to the " + newSettlement.getSizeModifier() + " " +
             newSettlement.getSize() + " of " + 
-            newSettlement.getName() + ".");
+            newSettlement.getName() + ". You are about " + 
+            travelTimeToSettlement.toPrettyString() + " away.");
     }
 }
 

@@ -29,4 +29,7 @@ export default function main() {
             window.commandHandler = null;
         }
     }
+    
+    Utils.newParagraph("mainScript.main: time to travel 5kms at 5km/h == " + 
+        Utils.travelTime([0, 0], [5, 0]).toPrettyString());
 }
