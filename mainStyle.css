@@ -1,0 +1,47 @@
+div{
+    
+}
+
+.main {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2b2f36;
+}
+
+.content {
+    position: absolute;
+    height: 61vh;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 20vh;
+    padding-top: 1vh;
+    
+    overflow-y: scroll;
+    color: white;
+    font-family: "Times New Roman", serif;
+    font-size: 150%;
+}
+
+input {
+    
+}
+
+.commandLine {
+    position: absolute;
+    height: 3vh;
+    width: 80vw;
+    
+    background-color: black;
+    
+    border: 1px solid slategrey;
+    margin-top: 85vh;
+    margin-left: 5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    
+    color: white;
+}
