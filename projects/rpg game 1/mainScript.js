@@ -32,4 +32,7 @@ export default function main() {
     
     Utils.newParagraph("mainScript.main: time to travel 5kms at 5km/h == " + 
         Utils.travelTime([0, 0], [5, 0]).toPrettyString());
+    
+    Utils.newParagraph("mainScript.main: time to travel 10kms at 5km/h == " + 
+        Utils.travelTime([0, 0], [10, 0]).toPrettyString());
 }
