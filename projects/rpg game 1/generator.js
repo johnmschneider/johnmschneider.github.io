@@ -68,12 +68,12 @@ Generator.genDesert = function(isStartLocation) {
 }
 
 Generator.genLocation = function(isStartLocation) {
-    let location = Math.floor(Math.random() * 2);
+    let location = Math.random();
     
-    if (location == 0) {
+    if (location < 1/2) {
         Generator.genMountainPass(isStartLocation);
     } 
-    else if (location == 1) {
+    else {
         Generator.genDesert(isStartLocation);
     }
 }
