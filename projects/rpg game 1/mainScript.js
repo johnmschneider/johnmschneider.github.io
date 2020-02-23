@@ -35,4 +35,7 @@ export default function main() {
     
     Utils.newParagraph("mainScript.main: time to travel 10kms at 5km/h == " + 
         Utils.travelTime([0, 0], [10, 0]).toPrettyString());
+    
+    Utils.newParagraph("mainScript.main: time to travel 125kms (25 hrs) at 5km/h == " + 
+        Utils.travelTime([0, 0], [125, 0]).toPrettyString());
 }
