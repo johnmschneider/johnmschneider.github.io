@@ -51,7 +51,8 @@ Utils.travelTime = function(pos1, pos2) {
     let kilometersPerHour = 5;
     let days = 0, hours = 0, minutes = 0;
     
-    hours = kilometersToTravel * kilometersPerHour;
+    hours = kilometersToTravel/kilometersPerHour;
+    
     if (hours > 24) {
         days = Math.floor(hours/24);
         hours = Math.floor(hours % 24);
