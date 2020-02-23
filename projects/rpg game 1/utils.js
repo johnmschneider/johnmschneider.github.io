@@ -18,8 +18,31 @@ class TravelTime {
     }
     
     toPrettyString() {
-        return this.getDays() + " days, " + this.getHours() + " hours and " + 
-            this.getMinutes() + " minutes";
+        let output = "";
+        let days = this.getDays();
+        let hours = this.getHours();
+        let minutes = this.getMinutes();
+        
+        if (days == 1) {
+            output = "1 day, ";
+        }
+        else if (days != 0) {
+            output = days + " days, ";
+        }
+        
+        if (hours == 1) {
+            output += "1 hour ";
+        }
+        else if (hours != 0) {
+            output += hours + " hours ";
+        }
+        
+        if (minutes == 1) {
+            output += "and 1 minute";
+        }
+        else if (minutes != 0) {
+            output += "and " + minutes + " minutes";
+        }
     }
 }
 
