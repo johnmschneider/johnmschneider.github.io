@@ -30,7 +30,7 @@ Generator.genSettlement = function() {
     }
 
     //  Generate size
-    let sizeModifiers = ["small", "moderately-sized", "large"]
+    let sizeModifiers = ["small", "moderately-sized", "large"];
     let sizes = ["city", "town", "village", "camp"];
 
     let sizeModifier = Utils.randomPick(sizeModifiers);
@@ -44,16 +44,38 @@ Generator.genSettlement = function() {
 }
 
 Generator.genMountainPass = function(isStartLocation) {
-    let newSettlement = Generator.genSettlement();
-    
-    Utils.newParagraph("You are travelling through a mountain pass on your way " +
-        "to the " + newSettlement[Generator.SETTLEMENT_SIZE_MODIFIER] + " " +
-        newSettlement[Generator.SETTLEMENT_SIZE] + " of " + 
-        newSettlement[Generator.SETTLEMENT_NAME] + ".");
+    if (isStartLocation) {
+        let newSettlement = Generator.genSettlement();
+
+        Utils.newParagraph("You are travelling through a mountain pass on your way " +
+            "to the " + newSettlement[Generator.SETTLEMENT_SIZE_MODIFIER] + " " +
+            newSettlement[Generator.SETTLEMENT_SIZE] + " of " + 
+            newSettlement[Generator.SETTLEMENT_NAME] + ".");
+    }
+}
+
+Generator.genDesert = function(isStartLocation) {
+    if (isStartLocation) {
+        
+        let sizes = ["small", "large", "vast"];
+        let size = Utils.randomPick(sizes);
+        
+        Utils.newParagraph("You are travelling through a " + size + " desert on your " +
+            "way to the " + newSettlement[Generator.SETTLEMENT_SIZE_MODIFIER] + " " +
+            newSettlement[Generator.SETTLEMENT_SIZE] + " of " + 
+            newSettlement[Generator.SETTLEMENT_NAME] + ".");
+    }
 }
 
 Generator.genLocation = function(isStartLocation) {
-    Generator.genMountainPass(isStartLocation);
+    let location = Math.floor(Math.random() * 2);
+    
+    if (location == 0) {
+        Generator.genMountainPass(isStartLocation);
+    } 
+    else if (location == 1) {
+        Generator.genDesert(isStartLocation);
+    }
 }
 
 Generator.genStartLocation = function() {
