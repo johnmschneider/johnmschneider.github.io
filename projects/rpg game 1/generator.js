@@ -56,6 +56,7 @@ Generator.genMountainPass = function(isStartLocation) {
 
 Generator.genDesert = function(isStartLocation) {
     if (isStartLocation) {
+        let newSettlement = Generator.genSettlement();
         
         let sizes = ["small", "large", "vast"];
         let size = Utils.randomPick(sizes);
@@ -64,9 +65,6 @@ Generator.genDesert = function(isStartLocation) {
             "way to the " + newSettlement[Generator.SETTLEMENT_SIZE_MODIFIER] + " " +
             newSettlement[Generator.SETTLEMENT_SIZE] + " of " + 
             newSettlement[Generator.SETTLEMENT_NAME] + ".");
-    }
-    else {
-        Utils.newParagraph("Generator.genDesert: not start location");
     }
 }
 
