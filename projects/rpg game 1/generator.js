@@ -1,11 +1,9 @@
 import { Utils } from 
     "https://johnmschneider.github.io/projects/rpg%20game%201/utils.js";
-
+import { Settlement } from 
+    "https://johnmschneider.github.io/projects/rpg%20game%201/settlement.js";
+   
 var Generator = {};
-Generator.SETTLEMENT_NAME = 0;
-Generator.SETTLEMENT_SIZE_MODIFIER = 1;
-Generator.SETTLEMENT_SIZE = 2;
-Generator.SETTLEMENT_CHUNK_LOCATION = 3;
 
 Generator.genSettlement = function() {
     let nameFrags = [
@@ -41,7 +39,7 @@ Generator.genSettlement = function() {
     let location = [(Math.random() - Math.random()) * 500, 
                     (Math.random() - Math.random()) * 500];
     
-    return [name, sizeModifier, size, location];
+    return new Settlement(name, sizeModifier, size, location);
 }
 
 Generator.genMountainPass = function(isStartLocation) {
@@ -49,9 +47,9 @@ Generator.genMountainPass = function(isStartLocation) {
         let newSettlement = Generator.genSettlement();
 
         Utils.newParagraph("You are travelling through a mountain pass on your way " +
-            "to the " + newSettlement[Generator.SETTLEMENT_SIZE_MODIFIER] + " " +
-            newSettlement[Generator.SETTLEMENT_SIZE] + " of " + 
-            newSettlement[Generator.SETTLEMENT_NAME] + ".");
+            "to the " + newSettlement.getSizeModifier() + " " +
+            newSettlement.getSize() + " of " + 
+            newSettlement.getName() + ".");
     }
 }
 
@@ -63,9 +61,9 @@ Generator.genDesert = function(isStartLocation) {
         let size = Utils.randomPick(sizes);
         
         Utils.newParagraph("You are travelling through a " + size + " desert on your " +
-            "way to the " + newSettlement[Generator.SETTLEMENT_SIZE_MODIFIER] + " " +
-            newSettlement[Generator.SETTLEMENT_SIZE] + " of " + 
-            newSettlement[Generator.SETTLEMENT_NAME] + ".");
+            "way to the " + newSettlement.getSizeModifier() + " " +
+            newSettlement.getSize() + " of " + 
+            newSettlement.getName() + ".");
     }
 }
 
