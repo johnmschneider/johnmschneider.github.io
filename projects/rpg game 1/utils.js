@@ -80,11 +80,11 @@ Utils.travelTime = function(pos1, pos2) {
     
     if (hours > 24) {
         days = Math.floor(hours/24);
-        hours = Math.floor(hours % 24);
     }
     
     //get remainder of the hour and convert that to minutes
     minutes = ((hours % 24) - Math.floor(hours % 24)) * 60;
+    hours = Math.floor(hours % 24);
     
     return new TravelTime(days, hours, minutes);
 }
