@@ -65,12 +65,16 @@ Generator.genDesert = function(isStartLocation) {
             newSettlement[Generator.SETTLEMENT_SIZE] + " of " + 
             newSettlement[Generator.SETTLEMENT_NAME] + ".");
     }
+    else {
+        Utils.newParagraph("Generator.genDesert: not start location");
+    }
 }
 
 Generator.genLocation = function(isStartLocation) {
     let location = Math.random();
     
     Utils.newParagraph("Generator.genLocation: location == " + location);
+    
     if (location < 1/2) {
         Generator.genMountainPass(isStartLocation);
     } 
