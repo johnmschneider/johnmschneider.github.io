@@ -39,7 +39,7 @@ Generator.genSettlement = function() {
     //  Generate location
     let location = [(Math.random() - Math.random()) * 500, 
                     (Math.random() - Math.random()) * 500];
-
+    
     return [name, sizeModifier, size, location];
 }
 
