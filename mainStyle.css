@@ -1,12 +1,16 @@
-div {
-    
+div.navbar {
+    position: absolute;
+    width: 100vw;
+    height: 13.6vh;
+    background-color: #232933;
 }
 
-.main {
+div.main {
     position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: #2b2f36;
+    padding: 0;
 }
 
 .content {
@@ -24,24 +28,27 @@ div {
     font-size: 150%;
 }
 
-.toolbar {
+input.navbar {
+    color: white;
+    background: black;
+    
+    border: none;
+    border-right: solid;
+    border-right-color: gray;
+    border-width: 2px;
+    
+    position: relative;
     padding-left: 1vw;
     padding-right: 1vw;
-}
-
-a {
-    color: gainsboro;
-    padding: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 1.5vh;
     
-    border-style: solid;
-    border-width: 1px;
+    z-index: 1;
 }
 
-h1 {
-    
-}
-
-.titleText {
+h1.titleText {
     text-align: center;
     color: white;
+    font-size: 4vh;
 }
