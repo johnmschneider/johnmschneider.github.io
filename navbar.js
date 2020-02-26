@@ -12,7 +12,7 @@ function createNavButton(buttonText, link) {
 function createNavbar() {
     createNavButton("Home", "index.html");
     createNavButton("Projects", "/projects/");
-    createNavButton("RPG game 1", "/projects/rpg game 1/rpgIndex.html");
+    //createNavButton("RPG game 1", "/projects/rpg game 1/rpgIndex.html");
 }
 
 createNavbar();
