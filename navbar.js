@@ -7,7 +7,6 @@ function createNavButton(buttonText, link) {
     button.addEventListener("click", function() {
         location.href = link;
         button.classList.add("currentPage");
-        });
         //since we navigated to a new page we don't have to unbold the other buttons
     });
     
