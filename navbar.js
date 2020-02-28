@@ -10,7 +10,7 @@ function createNavButton(buttonText, link) {
     });
     
     if (location.href == link) {
-        button.classList.add("currentPage")
+        button.classList.add("currentPage");
     }
     
     document.getElementById("navbarButtons").appendChild(button);
