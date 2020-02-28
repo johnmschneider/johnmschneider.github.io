@@ -15,7 +15,8 @@ function createNavButton(buttonText, link) {
 }
 
 function createNavbar() {
-    var homeButton = createNavButton("Home", "index.html");
+    var homeButton = createNavButton("Home", 
+        "https://johnmschneider.github.io/index.html");
     
     // the main index won't be able to use the click event to load itself (browser is
     //  directly navigating to the website)
