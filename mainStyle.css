@@ -5,6 +5,11 @@ div.navbar {
     background-color: #232933;
 }
 
+div.navbar.buttons {
+    background: #373e4a;
+    height: 3.57vh;
+}
+
 div.main {
     position: absolute;
     width: 100vw;
