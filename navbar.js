@@ -6,9 +6,7 @@ function createNavButton(buttonText, link) {
     button.className = "navbar";
     button.addEventListener("click", function() {
         location.href = link;
-        
-        document.addEventListener("DOMContentLoaded", function() {
-            button.style.fontWeight = 'bold';
+        button.classList.add("currentPage");
         });
         //since we navigated to a new page we don't have to unbold the other buttons
     });
@@ -24,7 +22,7 @@ function createNavbar() {
     // the main index won't be able to use the click event to load itself (browser is
     //  directly navigating to the website)
     if (location.href.search("johnmschneider.github.io/index.html") != -1) {
-        homeButton.style.fontWeight = 'bold';
+        homeButton.classList.add("currentPage");
     } 
     
     createNavButton("Projects", "https://johnmschneider.github.io/projects/" +

@@ -52,6 +52,10 @@ input.navbar {
     z-index: 1;
 }
 
+input.navbar.currentPage {
+    font-weight: bold;
+}
+
 h1.titleText {
     text-align: center;
     color: white;
