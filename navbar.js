@@ -4,9 +4,13 @@ function createNavButton(buttonText, link) {
     button.type = "button";
     button.value = buttonText;
     button.className = "navbar";
+    button.addEventListener("click", function() {
+        location.href = link;
+        //since we navigated to a new page we don't have to unbold the other buttons
+    });
     
     if (location.href == link) {
-        button.classList.add("currentPage");
+        button.classList.add("currentPage")
     }
     
     document.getElementById("navbarButtons").appendChild(button);
