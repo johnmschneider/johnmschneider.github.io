@@ -6,7 +6,10 @@ function createNavButton(buttonText, link) {
     button.className = "navbar";
     button.addEventListener("click", function() {
         location.href = link;
-        button.style.fontWeight = 'bold';
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            button.style.fontWeight = 'bold';
+        });
         //since we navigated to a new page we don't have to unbold the other buttons
     });
     
