@@ -20,7 +20,7 @@ function createNavbar() {
     
     // the main index won't be able to use the click event to load itself (browser is
     //  directly navigating to the website)
-    if (location.href.search("https://johnmschneider.github.io/index.html") != 0) {
+    if (location.href.search("johnmschneider.github.io/index.html") != -1) {
         homeButton.style.fontWeight = 'bold';
     } 
     
