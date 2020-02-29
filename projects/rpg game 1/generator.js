@@ -1,8 +1,7 @@
 import { Utils } from 
     "https://johnmschneider.github.io/projects/rpg%20game%201/utils.js";
 import { Settlement } from 
-    "https://johnmschneider.github.io/projects/rpg%20game%201/pointsOfInterest/" +
-    "settlement.js";
+    "https://johnmschneider.github.io/projects/rpg%20game%201/pointsOfInterest/settlement.js";
    
 var Generator = {};
 
